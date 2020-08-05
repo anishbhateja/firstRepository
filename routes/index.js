@@ -7,6 +7,7 @@ console.log("router loaded");
 
 router.get("/", homeController.home);
 router.use("/users", require("./users")); //if a route for users come, the it will take it to the users route.
+router.use("/posts", require("./posts"));
 //for any further routes,access from here
 //router.use('./routerName', require('./routerfile'))
 
