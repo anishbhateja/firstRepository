@@ -1,0 +1,15 @@
+#header-block {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  background-color: #428ffb;
+  box-sizing: border-box;
+  color: white; }
+  #header-block #profile-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px; }
+    #header-block #profile-container a {
+      text-decoration: none;
+      color: white; }

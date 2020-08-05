@@ -1,0 +1,17 @@
+#footer-block {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+  background-color: grey;
+  color: white; }
+  #footer-block #footer-links {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 1.3rem;
+    font-weight: 700; }
+    #footer-block #footer-links a {
+      text-decoration: none;
+      color: white; }

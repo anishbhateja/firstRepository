@@ -7,11 +7,16 @@
       <%= title %>
     </title>
     <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
     <!-- this will place the link tag of page to be rendered under this link tag -->
     <%- style %>
   </head>
   <body>
-    <%- include('_header'); %> <%- body %> <%- include('_footer'); %> <%- script
-    %>
+    <%- include('_header'); %>
+    <main id="layout-main">
+      <%- body %>
+    </main>
+    <%- include('_footer'); %> <%- script %>
   </body>
 </html>

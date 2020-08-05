@@ -1,3 +1,35 @@
 <header>
-  <h2>Header</h2>
+  <% if( locals.user) {%>
+  <div id="header-block">
+    <div>
+      <h1>Codeial</h1>
+    </div>
+
+    <div id="profile-container">
+      <div>
+        <a href="/users/profile"> <h2><%=user.name%> &nbsp;</h2></a>
+      </div>
+      <div>
+        <a href="/users/sign-out"> <h2>Sign Out</h2> </a>
+      </div>
+    </div>
+  </div>
+
+  <% }else{ %>
+  <div id="header-block">
+    <div>
+      <h1>Codeial</h1>
+    </div>
+
+    <div id="profile-container">
+      <div>
+        <a href="/users/sign-in"> <h2>Sign In &nbsp;</h2> </a>
+      </div>
+      <div>
+        <a href="/users/sign-up"> <h2>Sign Up</h2> </a>
+      </div>
+    </div>
+  </div>
+
+  <% } %>
 </header>
